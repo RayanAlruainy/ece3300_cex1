@@ -22,7 +22,7 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
-	result = (a ==0)? 0: (result << a)-1 ;
+	result = (a ==0)? 0: (result | ((1 << a)-1)) ;
    
 endmodule
 
