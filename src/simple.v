@@ -19,10 +19,10 @@
 
 module simple(
 	      input [2:0]  a,
-	      output reg [6:0] result);
+	      output  [6:0] result);
    
 // add your code here
-	result = (a == 0) ? 0 : ((1 << a)-1) ;
+	assign result = (a == 0) ? 0 : ((1 << a)-1);
    
 endmodule
 
